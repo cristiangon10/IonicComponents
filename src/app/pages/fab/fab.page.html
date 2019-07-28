@@ -1,0 +1,71 @@
+<app-header titulo="Fab's"></app-header>
+
+<ion-content>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="top">
+            <ion-fab-button color="facebook">
+                <ion-icon color="light" name="logo-facebook"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="google">
+                <ion-icon color="dark" name="logo-google"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="youtube">
+                <ion-icon color="light" name="logo-youtube"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+
+        <ion-fab-list side="start">
+            <ion-fab-button color="instagram">
+                <ion-icon color="light" name="logo-instagram"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="twitter">
+                <ion-icon color="light" name="logo-twitter"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="git-hub">
+                <ion-icon color="light" name="logo-github"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <ion-fab vertical="center" horizontal="center" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="share"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+            <ion-fab-button color="vimeo">
+                <ion-icon coor="light" name="logo-vimeo"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="bottom">
+            <ion-fab-button color="facebook">
+                <ion-icon color="light" name="logo-facebook"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="start">
+            <ion-fab-button color="instagram">
+                <ion-icon color="light" name="logo-instagram"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="end">
+            <ion-fab-button color="twitter">
+                <ion-icon color="light" name="logo-twitter"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <ion-list>
+        <ion-item *ngFor="let item of data; let i = index">
+            Item: {{i+1}}
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="twitter">
+        <ion-title color="light">Footer</ion-title>
+    </ion-toolbar>
+</ion-footer>
