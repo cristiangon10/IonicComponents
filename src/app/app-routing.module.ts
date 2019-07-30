@@ -21,6 +21,11 @@ const routes: Routes = [
   { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
   { path: 'popover', loadChildren: './pages/popover/popover.module#PopoverPageModule' },
   { path: 'progres-bar', loadChildren: './pages/progres-bar/progres-bar.module#ProgresBarPageModule' },
+  { path: 'refresher', loadChildren: './pages/refresher/refresher.module#RefresherPageModule' },
+  { path: 'searchbar', loadChildren: './pages/searchbar/searchbar.module#SearchbarPageModule' },
+  { path: 'segment', loadChildren: './pages/segment/segment.module#SegmentPageModule' },
+  { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
+  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
 ];
 
 @NgModule({
